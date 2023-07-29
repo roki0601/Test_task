@@ -45,7 +45,9 @@
 Данные о городах хранятся в словаре city, который содержит следующие поля:
 
 geonameid: уникальный идентификатор города
+
 name: название города
+
 asciiname: название города в ASCII-кодировке
 alternatenames: альтернативные названия города
 latitude: широта города
@@ -63,6 +65,10 @@ elevation: высота над уровнем моря
 dem: высота над уровнем моря в метрах, полученная из цифровой модели рельефа
 timezone: часовой пояс города
 modification date: дата последнего изменения информации о городе.
+
+Пример запроса `http://127.0.0.1:8000/city/451854`
+
+Ответ по запросу: `{"geocodeid": "451854", "name": "Shchemelinino", "asciiname": "Shchemelinino", "alternatenames": "Shchemelinino,Shhemelinino,Щемелинино", "latitude": "56.82786", "longitude": "34.84024", "feature class": "P", "feature code": "PPL", "country code": "RU", "cc2": "", "admin1 code": "77", "admin2 code": "", "admin3 code": "", "admin4 code": "", "population": "0", "elevation": "", "dem": "166", "timezone": "Europe/Moscow", "modification date": "2012-01-16"}`
 
 ### `GET /city`
 
